@@ -1,0 +1,23 @@
+[project]
+name = "bpe-tokenizer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "regex>=2026.5.9",
+]
+
+[project.optional-dependencies]
+download-data = [
+    "jupyter>=1.1.1",
+    "requests>=2.34.2",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+]
+lint = [
+    "ruff>=0.15.13",
+]
