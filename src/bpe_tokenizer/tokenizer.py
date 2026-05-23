@@ -3,7 +3,7 @@ Contains the GPT4 Tokenizer class and a few common helper functions.
 """
 
 from typing import Optional
-from utils import replace_control_characters, render_token
+from .utils import replace_control_characters, render_token
 import regex as re
 
 def get_stats(ids, counts=None):
@@ -213,7 +213,7 @@ class Tokenizer():
     
     
 
-    def save(self, file_prefix):
+    def save(self, file_prefix, save_path=None):
         """
         Saves two files: file_prefix.vocab and file_prefix.model
         This is inspired (but not equivalent to!) sentencepiece's model saving:
@@ -221,7 +221,10 @@ class Tokenizer():
         - vocab file is just a pretty printed version for human inspection only
         """
         # write the model: to be used in load() later
-        model_file = file_prefix + ".model"
+        if save_path is not None:
+            model_file = f"{save_path}/{file_prefix}.model"
+        else:
+            model_file = file_prefix + ".model"
         with open(model_file, 'w') as f:
             # write the version, pattern and merges, that's all that's needed
             f.write("minbpe v1\n")
@@ -234,7 +237,10 @@ class Tokenizer():
             for idx1, idx2 in self.merges:
                 f.write(f"{idx1} {idx2}\n")
         # write the vocab: for the human to look at
-        vocab_file = file_prefix + ".vocab"
+        if save_path is not None:
+            vocab_file = f"{save_path}/{file_prefix}.vocab"
+        else:
+            vocab_file = file_prefix + ".vocab"
         inverted_merges = {idx: pair for pair, idx in self.merges.items()}
         with open(vocab_file, "w", encoding="utf-8") as f:
             for idx, token in self.vocab.items():
@@ -346,4 +352,4 @@ if __name__ == "__main__":
 
     tokenizer_dir = os.path.join(os.path.dirname(__file__), '..', 'saved_tokenizers')
 
-    tokenizer.save("tokenizer")
+    tokenizer.save("tokenizer", save_path=tokenizer_dir)

@@ -1,0 +1,1005 @@
+[\u0000] 0
+[\u0001] 1
+[\u0002] 2
+[\u0003] 3
+[\u0004] 4
+[\u0005] 5
+[\u0006] 6
+[\u0007] 7
+[\u0008] 8
+[\u0009] 9
+[\u000a] 10
+[\u000b] 11
+[\u000c] 12
+[\u000d] 13
+[\u000e] 14
+[\u000f] 15
+[\u0010] 16
+[\u0011] 17
+[\u0012] 18
+[\u0013] 19
+[\u0014] 20
+[\u0015] 21
+[\u0016] 22
+[\u0017] 23
+[\u0018] 24
+[\u0019] 25
+[\u001a] 26
+[\u001b] 27
+[\u001c] 28
+[\u001d] 29
+[\u001e] 30
+[\u001f] 31
+[ ] 32
+[!] 33
+["] 34
+[#] 35
+[$] 36
+[%] 37
+[&] 38
+['] 39
+[(] 40
+[)] 41
+[*] 42
+[+] 43
+[,] 44
+[-] 45
+[.] 46
+[/] 47
+[0] 48
+[1] 49
+[2] 50
+[3] 51
+[4] 52
+[5] 53
+[6] 54
+[7] 55
+[8] 56
+[9] 57
+[:] 58
+[;] 59
+[<] 60
+[=] 61
+[>] 62
+[?] 63
+[@] 64
+[A] 65
+[B] 66
+[C] 67
+[D] 68
+[E] 69
+[F] 70
+[G] 71
+[H] 72
+[I] 73
+[J] 74
+[K] 75
+[L] 76
+[M] 77
+[N] 78
+[O] 79
+[P] 80
+[Q] 81
+[R] 82
+[S] 83
+[T] 84
+[U] 85
+[V] 86
+[W] 87
+[X] 88
+[Y] 89
+[Z] 90
+[[] 91
+[\] 92
+[]] 93
+[^] 94
+[_] 95
+[`] 96
+[a] 97
+[b] 98
+[c] 99
+[d] 100
+[e] 101
+[f] 102
+[g] 103
+[h] 104
+[i] 105
+[j] 106
+[k] 107
+[l] 108
+[m] 109
+[n] 110
+[o] 111
+[p] 112
+[q] 113
+[r] 114
+[s] 115
+[t] 116
+[u] 117
+[v] 118
+[w] 119
+[x] 120
+[y] 121
+[z] 122
+[{] 123
+[|] 124
+[}] 125
+[~] 126
+[\u007f] 127
+[�] 128
+[�] 129
+[�] 130
+[�] 131
+[�] 132
+[�] 133
+[�] 134
+[�] 135
+[�] 136
+[�] 137
+[�] 138
+[�] 139
+[�] 140
+[�] 141
+[�] 142
+[�] 143
+[�] 144
+[�] 145
+[�] 146
+[�] 147
+[�] 148
+[�] 149
+[�] 150
+[�] 151
+[�] 152
+[�] 153
+[�] 154
+[�] 155
+[�] 156
+[�] 157
+[�] 158
+[�] 159
+[�] 160
+[�] 161
+[�] 162
+[�] 163
+[�] 164
+[�] 165
+[�] 166
+[�] 167
+[�] 168
+[�] 169
+[�] 170
+[�] 171
+[�] 172
+[�] 173
+[�] 174
+[�] 175
+[�] 176
+[�] 177
+[�] 178
+[�] 179
+[�] 180
+[�] 181
+[�] 182
+[�] 183
+[�] 184
+[�] 185
+[�] 186
+[�] 187
+[�] 188
+[�] 189
+[�] 190
+[�] 191
+[�] 192
+[�] 193
+[�] 194
+[�] 195
+[�] 196
+[�] 197
+[�] 198
+[�] 199
+[�] 200
+[�] 201
+[�] 202
+[�] 203
+[�] 204
+[�] 205
+[�] 206
+[�] 207
+[�] 208
+[�] 209
+[�] 210
+[�] 211
+[�] 212
+[�] 213
+[�] 214
+[�] 215
+[�] 216
+[�] 217
+[�] 218
+[�] 219
+[�] 220
+[�] 221
+[�] 222
+[�] 223
+[�] 224
+[�] 225
+[�] 226
+[�] 227
+[�] 228
+[�] 229
+[�] 230
+[�] 231
+[�] 232
+[�] 233
+[�] 234
+[�] 235
+[�] 236
+[�] 237
+[�] 238
+[�] 239
+[�] 240
+[�] 241
+[�] 242
+[�] 243
+[�] 244
+[�] 245
+[�] 246
+[�] 247
+[�] 248
+[�] 249
+[�] 250
+[�] 251
+[�] 252
+[�] 253
+[�] 254
+[�] 255
+[i][n] -> [in] 256
+[ ][t] -> [ t] 257
+[ ][a] -> [ a] 258
+[r][e] -> [re] 259
+[o][n] -> [on] 260
+[a][t] -> [at] 261
+[h][e] -> [he] 262
+[l][e] -> [le] 263
+[in][g] -> [ing] 264
+[a][r] -> [ar] 265
+[e][r] -> [er] 266
+[o][r] -> [or] 267
+[ t][he] -> [ the] 268
+[i][on] -> [ion] 269
+[s][e] -> [se] 270
+[a][l] -> [al] 271
+[ ][c] -> [ c] 272
+[i][t] -> [it] 273
+[i][c] -> [ic] 274
+[ ][m] -> [ m] 275
+[ ][o] -> [ o] 276
+[e][n] -> [en] 277
+[i][s] -> [is] 278
+[ ][s] -> [ s] 279
+[ ][d] -> [ d] 280
+[ ][p] -> [ p] 281
+[ ][in] -> [ in] 282
+[ ][b] -> [ b] 283
+[a][n] -> [an] 284
+[ ][f] -> [ f] 285
+[e][s] -> [es] 286
+[ o][f] -> [ of] 287
+[r][o] -> [ro] 288
+[e][d] -> [ed] 289
+[a][c] -> [ac] 290
+[ a][n] -> [ an] 291
+[ ][le] -> [ le] 292
+[ar][n] -> [arn] 293
+[ t][o] -> [ to] 294
+[e][l] -> [el] 295
+[ le][arn] -> [ learn] 296
+[ ][re] -> [ re] 297
+[ ][w] -> [ w] 298
+[o][m] -> [om] 299
+[ learn][ing] -> [ learning] 300
+[u][t] -> [ut] 301
+[ an][d] -> [ and] 302
+[at][ion] -> [ation] 303
+[e][c] -> [ec] 304
+[s][t] -> [st] 305
+[ ][e] -> [ e] 306
+[e][t] -> [et] 307
+[i][m] -> [im] 308
+[in][e] -> [ine] 309
+[ ][n] -> [ n] 310
+[ac][h] -> [ach] 311
+[a][s] -> [as] 312
+[it][h] -> [ith] 313
+[ ][u] -> [ u] 314
+[r][a] -> [ra] 315
+[o][d] -> [od] 316
+[ ][h] -> [ h] 317
+[l][y] -> [ly] 318
+[ t][h] -> [ th] 319
+[i][f] -> [if] 320
+[t][ion] -> [tion] 321
+[at][a] -> [ata] 322
+[se][d] -> [sed] 323
+[ ][is] -> [ is] 324
+[ach][ine] -> [achine] 325
+[ d][ata] -> [ data] 326
+[en][t] -> [ent] 327
+[ a][l] -> [ al] 328
+[i][v] -> [iv] 329
+[ ][l] -> [ l] 330
+[.][\u000a] -> [.\u000a] 331
+[m][s] -> [ms] 332
+[c][e] -> [ce] 333
+[ c][om] -> [ com] 334
+[ p][ro] -> [ pro] 335
+[ m][achine] -> [ machine] 336
+[ th][at] -> [ that] 337
+[u][r] -> [ur] 338
+[ a][s] -> [ as] 339
+[u][l] -> [ul] 340
+[ b][e] -> [ be] 341
+[i][g] -> [ig] 342
+[v][i] -> [vi] 343
+[i][l] -> [il] 344
+[g][or] -> [gor] 345
+[od][el] -> [odel] 346
+[p][ut] -> [put] 347
+[ ][on] -> [ on] 348
+[ m][odel] -> [ model] 349
+[ic][al] -> [ical] 350
+[a][b] -> [ab] 351
+[ e][x] -> [ ex] 352
+[u][c] -> [uc] 353
+[a][m] -> [am] 354
+[gor][ith] -> [gorith] 355
+[ f][or] -> [ for] 356
+[ra][in] -> [rain] 357
+[p][le] -> [ple] 358
+[o][w] -> [ow] 359
+[o][l] -> [ol] 360
+[if][ic] -> [ific] 361
+[is][t] -> [ist] 362
+[ ][se] -> [ se] 363
+[re][s] -> [res] 364
+[u][n] -> [un] 365
+[re][d] -> [red] 366
+[o][t] -> [ot] 367
+[ c][on] -> [ con] 368
+[ a][re] -> [ are] 369
+[ w][ith] -> [ with] 370
+[ al][gorith] -> [ algorith] 371
+[p][er] -> [per] 372
+[er][s] -> [ers] 373
+[i][al] -> [ial] 374
+[ b][y] -> [ by] 375
+[ t][rain] -> [ train] 376
+[p][l] -> [pl] 377
+[ ][g] -> [ g] 378
+[an][d] -> [and] 379
+[f][or] -> [for] 380
+[n][t] -> [nt] 381
+[ s][t] -> [ st] 382
+[ c][l] -> [ cl] 383
+[g][e] -> [ge] 384
+[s][ion] -> [sion] 385
+[ u][n] -> [ un] 386
+[ro][m] -> [rom] 387
+[i][d] -> [id] 388
+[he][r] -> [her] 389
+[ ][or] -> [ or] 390
+[u][d] -> [ud] 391
+[se][s] -> [ses] 392
+[ ][T] -> [ T] 393
+[ in][t] -> [ int] 394
+[ ][v] -> [ v] 395
+[ c][an] -> [ can] 396
+[p][ro] -> [pro] 397
+[ n][e] -> [ ne] 398
+[ ][it] -> [ it] 399
+[ ][A] -> [ A] 400
+[q][u] -> [qu] 401
+[ f][rom] -> [ from] 402
+[t][s] -> [ts] 403
+[it][y] -> [ity] 404
+[ s][y] -> [ sy] 405
+[s][o] -> [so] 406
+[iv][e] -> [ive] 407
+[e][m] -> [em] 408
+[ ][(] -> [ (] 409
+[et][w] -> [etw] 410
+[v][er] -> [ver] 411
+[ ][r] -> [ r] 412
+[I][n] -> [In] 413
+[at][e] -> [ate] 414
+[ train][ing] -> [ training] 415
+[c][es] -> [ces] 416
+[as][s] -> [ass] 417
+[ a][p] -> [ ap] 418
+[v][e] -> [ve] 419
+[for][m] -> [form] 420
+[o][g] -> [og] 421
+[a][y] -> [ay] 422
+[u][s] -> [us] 423
+[or][k] -> [ork] 424
+[ation][s] -> [ations] 425
+[p][re] -> [pre] 426
+[am][ple] -> [ample] 427
+[ a][c] -> [ ac] 428
+[a][d] -> [ad] 429
+[le][d] -> [led] 430
+[ ][im] -> [ im] 431
+[ ]["] -> [ "] 432
+[at][ed] -> [ated] 433
+[t][er] -> [ter] 434
+[ sy][st] -> [ syst] 435
+[se][nt] -> [sent] 436
+[ w][h] -> [ wh] 437
+[ec][t] -> [ect] 438
+[ algorith][ms] -> [ algorithms] 439
+[ com][p] -> [ comp] 440
+[u][per] -> [uper] 441
+[ in][c] -> [ inc] 442
+[u][m] -> [um] 443
+[pre][sent] -> [present] 444
+[ d][e] -> [ de] 445
+[ cl][ass] -> [ class] 446
+[et][h] -> [eth] 447
+[a][in] -> [ain] 448
+[ar][i] -> [ari] 449
+[ p][red] -> [ pred] 450
+[m][ent] -> [ment] 451
+[i][es] -> [ies] 452
+[ se][t] -> [ set] 453
+[ab][le] -> [able] 454
+[eth][od] -> [ethod] 455
+[i][r] -> [ir] 456
+[ u][sed] -> [ used] 457
+[c][h] -> [ch] 458
+[ s][p] -> [ sp] 459
+[ pred][ic] -> [ predic] 460
+[ ex][ample] -> [ example] 461
+[ re][present] -> [ represent] 462
+[ar][t] -> [art] 463
+[uper][vi] -> [upervi] 464
+[upervi][sed] -> [upervised] 465
+[u][re] -> [ure] 466
+[tion][s] -> [tions] 467
+[e][ms] -> [ems] 468
+[b][le] -> [ble] 469
+[ p][er] -> [ per] 470
+[p][t] -> [pt] 471
+[o][re] -> [ore] 472
+[d][uc] -> [duc] 473
+[a][k] -> [ak] 474
+[en][er] -> [ener] 475
+[or][y] -> [ory] 476
+[ d][ec] -> [ dec] 477
+[is][ion] -> [ision] 478
+[ o][ut] -> [ out] 479
+[es][t] -> [est] 480
+[uc][h] -> [uch] 481
+[ul][t] -> [ult] 482
+[a][ve] -> [ave] 483
+[etw][ork] -> [etwork] 484
+[ com][put] -> [ comput] 485
+[a][sed] -> [ased] 486
+[ig][n] -> [ign] 487
+[e][re] -> [ere] 488
+[res][sion] -> [ression] 489
+[u][st] -> [ust] 490
+[ p][o] -> [ po] 491
+[ific][ial] -> [ificial] 492
+[ per][form] -> [ perform] 493
+[ n][etwork] -> [ network] 494
+[o][us] -> [ous] 495
+[t][h] -> [th] 496
+[c][i] -> [ci] 497
+[ T][he] -> [ The] 498
+[ ][k] -> [ k] 499
+[a][re] -> [are] 500
+[r][i] -> [ri] 501
+[ a][d] -> [ ad] 502
+[ m][ethod] -> [ method] 503
+[n][ow] -> [now] 504
+[e][at] -> [eat] 505
+[i][el] -> [iel] 506
+[ algorith][m] -> [ algorithm] 507
+[it][ion] -> [ition] 508
+[ ne][ur] -> [ neur] 509
+[ h][ave] -> [ have] 510
+[ syst][ems] -> [ systems] 511
+[ec][h] -> [ech] 512
+[l][ud] -> [lud] 513
+[ re][s] -> [ res] 514
+[ A][I] -> [ AI] 515
+[ v][ari] -> [ vari] 516
+[ model][s] -> [ models] 517
+[ s][uch] -> [ such] 518
+[ in][put] -> [ input] 519
+[iel][d] -> [ield] 520
+[en][ce] -> [ence] 521
+[s][s] -> [ss] 522
+[ific][ation] -> [ification] 523
+[ces][s] -> [cess] 524
+[g][ra] -> [gra] 525
+[e][p] -> [ep] 526
+[ w][he] -> [ whe] 527
+[t][her] -> [ther] 528
+[ inc][lud] -> [ includ] 529
+['][s] -> ['s] 530
+[ ][en] -> [ en] 531
+[y][p] -> [yp] 532
+[el][l] -> [ell] 533
+[an][ce] -> [ance] 534
+[d][er] -> [der] 535
+[ ][C] -> [ C] 536
+[n][i] -> [ni] 537
+[ a][r] -> [ ar] 538
+[ n][ot] -> [ not] 539
+[a][ge] -> [age] 540
+[t][en] -> [ten] 541
+[c][tion] -> [ction] 542
+[u][le] -> [ule] 543
+[o][ut] -> [out] 544
+[ ap][pro] -> [ appro] 545
+[ist][ic] -> [istic] 546
+[c][t] -> [ct] 547
+[ ][M] -> [ M] 548
+[ ][S] -> [ S] 549
+[se][ar] -> [sear] 550
+[ u][s] -> [ us] 551
+[ ][In] -> [ In] 552
+[a][g] -> [ag] 553
+[pl][ic] -> [plic] 554
+[ p][re] -> [ pre] 555
+[al][y] -> [aly] 556
+[el][y] -> [ely] 557
+[ al][so] -> [ also] 558
+[ be][en] -> [ been] 559
+[ ][I] -> [ I] 560
+[ dec][ision] -> [ decision] 561
+[ d][is] -> [ dis] 562
+[ac][k] -> [ack] 563
+[ b][i] -> [ bi] 564
+[ f][ield] -> [ field] 565
+[an][y] -> [any] 566
+[m][at] -> [mat] 567
+[un][d] -> [und] 568
+[s][upervised] -> [supervised] 569
+[ac][t] -> [act] 570
+[ method][s] -> [ methods] 571
+[ h][as] -> [ has] 572
+[ g][ener] -> [ gener] 573
+[a][ses] -> [ases] 574
+[as][k] -> [ask] 575
+[he][s] -> [hes] 576
+[is][ation] -> [isation] 577
+[ re][l] -> [ rel] 578
+[ic][h] -> [ich] 579
+[ the][ir] -> [ their] 580
+[ar][d] -> [ard] 581
+[om][e] -> [ome] 582
+[2][0] -> [20] 583
+[f][f] -> [ff] 584
+[ f][eat] -> [ feat] 585
+[ig][h] -> [igh] 586
+[an][s] -> [ans] 587
+[ ac][c] -> [ acc] 588
+[T][he] -> [The] 589
+[ pro][gra] -> [ progra] 590
+[h][a] -> [ha] 591
+[ wh][ich] -> [ which] 592
+[t][ain] -> [tain] 593
+[ t][ech] -> [ tech] 594
+[r][on] -> [ron] 595
+[ter][n] -> [tern] 596
+[ar][y] -> [ary] 597
+[ int][o] -> [ into] 598
+[ni][qu] -> [niqu] 599
+[)][,] -> [),] 600
+[ t][r] -> [ tr] 601
+[an][t] -> [ant] 602
+[ o][b] -> [ ob] 603
+[ re][sear] -> [ resear] 604
+[arn][ing] -> [arning] 605
+[ re][c] -> [ rec] 606
+[at][ive] -> [ative] 607
+[ab][il] -> [abil] 608
+[ e][m] -> [ em] 609
+[ b][etw] -> [ betw] 610
+[ betw][e] -> [ betwe] 611
+[ betwe][en] -> [ between] 612
+[ec][tion] -> [ection] 613
+[ ar][t] -> [ art] 614
+[or][s] -> [ors] 615
+[u][res] -> [ures] 616
+[i][le] -> [ile] 617
+[ e][v] -> [ ev] 618
+[ab][el] -> [abel] 619
+[ f][un] -> [ fun] 620
+[ d][et] -> [ det] 621
+[sion][al] -> [sional] 622
+[ r][ule] -> [ rule] 623
+[v][el] -> [vel] 624
+[1][9] -> [19] 625
+[ w][as] -> [ was] 626
+[ c][h] -> [ ch] 627
+[ b][ut] -> [ but] 628
+[ h][um] -> [ hum] 629
+[ the][ory] -> [ theory] 630
+[o][f] -> [of] 631
+[ p][at] -> [ pat] 632
+[ t][ask] -> [ task] 633
+[ it][s] -> [ its] 634
+[h][is] -> [his] 635
+[ pro][ble] -> [ proble] 636
+[ k][now] -> [ know] 637
+[-][b] -> [-b] 638
+[ out][put] -> [ output] 639
+[w][are] -> [ware] 640
+[ pro][cess] -> [ process] 641
+[ul][ar] -> [ular] 642
+[il][l] -> [ill] 643
+[ical][ly] -> [ically] 644
+[i][k] -> [ik] 645
+[en][d] -> [end] 646
+[im][en] -> [imen] 647
+[ m][in] -> [ min] 648
+[ an][aly] -> [ analy] 649
+[ progra][m] -> [ program] 650
+[u][b] -> [ub] 651
+[ neur][al] -> [ neural] 652
+[on][s] -> [ons] 653
+[ ][P] -> [ P] 654
+[niqu][es] -> [niques] 655
+[ine][ar] -> [inear] 656
+[in][d] -> [ind] 657
+[ un][der] -> [ under] 658
+[ u][se] -> [ use] 659
+[er][v] -> [erv] 660
+[ m][ak] -> [ mak] 661
+[f][ere] -> [fere] 662
+[ class][ification] -> [ classification] 663
+[ predic][t] -> [ predict] 664
+[ re][g] -> [ reg] 665
+[imen][sional] -> [imensional] 666
+[ t][re] -> [ tre] 667
+[ network][s] -> [ networks] 668
+[ st][at] -> [ stat] 669
+[o][und] -> [ound] 670
+[s][is] -> [sis] 671
+[vi][d] -> [vid] 672
+[al][u] -> [alu] 673
+[ T][his] -> [ This] 674
+[ o][ther] -> [ other] 675
+[ the][se] -> [ these] 676
+[ d][i] -> [ di] 677
+[-b][ased] -> [-based] 678
+[or][d] -> [ord] 679
+[ p][art] -> [ part] 680
+[c][o] -> [co] 681
+[ example][s] -> [ examples] 682
+[ vari][able] -> [ variable] 683
+[ol][d] -> [old] 684
+[ell][ig] -> [ellig] 685
+[er][n] -> [ern] 686
+[pt][im] -> [ptim] 687
+[e][w] -> [ew] 688
+[p][o] -> [po] 689
+[im][e] -> [ime] 690
+[ c][al] -> [ cal] 691
+[ hum][an] -> [ human] 692
+[ ][B] -> [ B] 693
+[m][on] -> [mon] 694
+[an][g] -> [ang] 695
+[i][ed] -> [ied] 696
+[le][arning] -> [learning] 697
+[a][p] -> [ap] 698
+[ign][al] -> [ignal] 699
+[i][p] -> [ip] 700
+[ ][D] -> [ D] 701
+[ a][t] -> [ at] 702
+[20][1] -> [201] 703
+[b][abil] -> [babil] 704
+[p][h] -> [ph] 705
+[led][ge] -> [ledge] 706
+[ con][t] -> [ cont] 707
+[ a][b] -> [ ab] 708
+[ art][ificial] -> [ artificial] 709
+[ comp][ression] -> [ compression] 710
+[im][il] -> [imil] 711
+[imil][ar] -> [imilar] 712
+[ l][abel] -> [ label] 713
+[ e][ff] -> [ eff] 714
+[ gener][al] -> [ general] 715
+[ l][ik] -> [ lik] 716
+[ tech][niques] -> [ techniques] 717
+[ whe][re] -> [ where] 718
+[ m][any] -> [ many] 719
+[ o][ptim] -> [ optim] 720
+[ on][e] -> [ one] 721
+[ analy][sis] -> [ analysis] 722
+[u][g] -> [ug] 723
+[ m][at] -> [ mat] 724
+[d][ition] -> [dition] 725
+[ e][ach] -> [ each] 726
+[i][an] -> [ian] 727
+[ cal][led] -> [ called] 728
+[ I][t] -> [ It] 729
+[ sp][ec] -> [ spec] 730
+[m][al] -> [mal] 731
+[ ][G] -> [ G] 732
+[ ][R] -> [ R] 733
+[ syst][em] -> [ system] 734
+[so][ci] -> [soci] 735
+[ m][ay] -> [ may] 736
+[e][red] -> [ered] 737
+[ cl][ust] -> [ clust] 738
+[er][ing] -> [ering] 739
+[ic][s] -> [ics] 740
+[ train][ed] -> [ trained] 741
+[ acc][ur] -> [ accur] 742
+[ac][y] -> [acy] 743
+[ fun][ction] -> [ function] 744
+[ variable][s] -> [ variables] 745
+[t][ing] -> [ting] 746
+[ reg][ression] -> [ regression] 747
+[ of][ten] -> [ often] 748
+[ist][ical] -> [istical] 749
+[ al][l] -> [ all] 750
+[ perform][ance] -> [ performance] 751
+[ug][h] -> [ugh] 752
+[re][ct] -> [rect] 753
+[ d][es] -> [ des] 754
+[ri][b] -> [rib] 755
+[ con][n] -> [ conn] 756
+[c][on] -> [con] 757
+[ pat][tern] -> [ pattern] 758
+[ us][ing] -> [ using] 759
+[p][or] -> [por] 760
+[iv][en] -> [iven] 761
+[ de][f] -> [ def] 762
+[ s][ome] -> [ some] 763
+[o][ur] -> [our] 764
+[)][.] -> [).] 765
+[ proble][ms] -> [ problems] 766
+[e][x] -> [ex] 767
+[ m][ore] -> [ more] 768
+[s][id] -> [sid] 769
+[ sp][ac] -> [ spac] 770
+[F][or] -> [For] 771
+[at][es] -> [ates] 772
+[ tr][ans] -> [ trans] 773
+[ o][ver] -> [ over] 774
+[ t][yp] -> [ typ] 775
+[ predic][tions] -> [ predictions] 776
+[ b][u] -> [ bu] 777
+[ ne][w] -> [ new] 778
+[ d][o] -> [ do] 779
+[s][erv] -> [serv] 780
+[-][d] -> [-d] 781
+[ st][ud] -> [ stud] 782
+[art][ificial] -> [artificial] 783
+[ int][ellig] -> [ intellig] 784
+[o][p] -> [op] 785
+[i][z] -> [iz] 786
+[ac][hes] -> [aches] 787
+[he][mat] -> [hemat] 788
+[o][se] -> [ose] 789
+[ min][ing] -> [ mining] 790
+[in][t] -> [int] 791
+[o][st] -> [ost] 792
+[ t][er] -> [ ter] 793
+[ t][ime] -> [ time] 794
+[.][In] -> [.In] 795
+[ ][H] -> [ H] 796
+[r][uc] -> [ruc] 797
+[ h][ow] -> [ how] 798
+[in][for] -> [infor] 799
+[infor][ce] -> [inforce] 800
+[inforce][ment] -> [inforcement] 801
+[in][es] -> [ines] 802
+[ ][qu] -> [ qu] 803
+[ res][p] -> [ resp] 804
+[ task][s] -> [ tasks] 805
+[k][now] -> [know] 806
+[e][o] -> [eo] 807
+[it][ies] -> [ities] 808
+[ut][ion] -> [ution] 809
+[ ][j] -> [ j] 810
+[ic][i] -> [ici] 811
+[ dis][co] -> [ disco] 812
+[if][fere] -> [iffere] 813
+[ ][E] -> [ E] 814
+[ l][ar] -> [ lar] 815
+[ ap][plic] -> [ applic] 816
+[ com][ple] -> [ comple] 817
+[ con][sid] -> [ consid] 818
+[ feat][ures] -> [ features] 819
+[vi][ron] -> [viron] 820
+[viron][ment] -> [vironment] 821
+[ m][ult] -> [ mult] 822
+[i][er] -> [ier] 823
+[ det][ection] -> [ detection] 824
+[ n][on] -> [ non] 825
+[M][achine] -> [Machine] 826
+[ appro][aches] -> [ approaches] 827
+[hemat][ical] -> [hematical] 828
+[ol][og] -> [olog] 829
+[ ][he] -> [ he] 830
+[ includ][ing] -> [ including] 831
+[al][gorith] -> [algorith] 832
+[ resear][ch] -> [ research] 833
+[c][l] -> [cl] 834
+[e][as] -> [eas] 835
+[v][ers] -> [vers] 836
+[o][ul] -> [oul] 837
+[oul][d] -> [ould] 838
+[d][u] -> [du] 839
+[e][ver] -> [ever] 840
+[ p][r] -> [ pr] 841
+[am][e] -> [ame] 842
+[ s][ub] -> [ sub] 843
+[ g][o] -> [ go] 844
+[a][le] -> [ale] 845
+[ as][soci] -> [ associ] 846
+[ in][st] -> [ inst] 847
+[ ][L] -> [ L] 848
+[ic][ular] -> [icular] 849
+[ re][duc] -> [ reduc] 850
+[ on][ly] -> [ only] 851
+[ learn][ed] -> [ learned] 852
+[u][al] -> [ual] 853
+[ s][upervised] -> [ supervised] 854
+[a][il] -> [ail] 855
+[ bu][il] -> [ buil] 856
+[igh][t] -> [ight] 857
+[ comple][x] -> [ complex] 858
+[-][learning] -> [-learning] 859
+[ ][id] -> [ id] 860
+[ en][vironment] -> [ environment] 861
+[s][p] -> [sp] 862
+[ c][ol] -> [ col] 863
+[ bi][ases] -> [ biases] 864
+[.][A] -> [.A] 865
+[e][ep] -> [eep] 866
+[ pre][vi] -> [ previ] 867
+[ previ][ous] -> [ previous] 868
+[istic][s] -> [istics] 869
+[ rel][ated] -> [ related] 870
+[o][c] -> [oc] 871
+[ c][or] -> [ cor] 872
+[ th][is] -> [ this] 873
+[pl][o] -> [plo] 874
+[plo][y] -> [ploy] 875
+[l][f] -> [lf] 876
+[ whe][n] -> [ when] 877
+[og][n] -> [ogn] 878
+[ b][o] -> [ bo] 879
+[ruc][t] -> [ruct] 880
+[er][tain] -> [ertain] 881
+[ b][ased] -> [ based] 882
+[ ex][per] -> [ exper] 883
+[le][ct] -> [lect] 884
+[ pattern][s] -> [ patterns] 885
+[iv][ely] -> [ively] 886
+[por][t] -> [port] 887
+[it][s] -> [its] 888
+[m][b] -> [mb] 889
+[ im][pro] -> [ impro] 890
+[v][es] -> [ves] 891
+[du][ce] -> [duce] 892
+[ a][g] -> [ ag] 893
+[A][I] -> [AI] 894
+[ w][ere] -> [ were] 895
+[ appro][ach] -> [ approach] 896
+[ know][ledge] -> [ knowledge] 897
+[ l][og] -> [ log] 898
+[ program][m] -> [ programm] 899
+[i][e] -> [ie] 900
+[ pro][babil] -> [ probabil] 901
+[n][ce] -> [nce] 902
+[ spac][e] -> [ space] 903
+[ s][imilar] -> [ similar] 904
+[ feat][ure] -> [ feature] 905
+[ ][For] -> [ For] 906
+[i][ble] -> [ible] 907
+[t][ware] -> [tware] 908
+[ represent][ed] -> [ represented] 909
+[ wh][ile] -> [ while] 910
+[ag][es] -> [ages] 911
+[ t][est] -> [ test] 912
+[ disco][ver] -> [ discover] 913
+[iffere][nt] -> [ifferent] 914
+[ accur][acy] -> [ accuracy] 915
+[n][ot] -> [not] 916
+[ ad][dition] -> [ addition] 917
+[ lik][e] -> [ like] 918
+[ lar][ge] -> [ large] 919
+[i][se] -> [ise] 920
+[it][ting] -> [itting] 921
+[ input][s] -> [ inputs] 922
+[ s][ignal] -> [ signal] 923
+[a][st] -> [ast] 924
+[ id][ent] -> [ ident] 925
+[ class][if] -> [ classif] 926
+[ ob][serv] -> [ observ] 927
+[ mak][e] -> [ make] 928
+[-d][imensional] -> [-dimensional] 929
+[f][ul] -> [ful] 930
+[ic][tion] -> [iction] 931
+[iction][ary] -> [ictionary] 932
+[ar][se] -> [arse] 933
+[ mult][i] -> [ multi] 934
+[ part][icular] -> [ particular] 935
+[ rule][s] -> [ rules] 936
+[l][inear] -> [linear] 937
+[ l][ay] -> [ lay] 938
+[ stud][y] -> [ study] 939
+[en][c] -> [enc] 940
+[vel][op] -> [velop] 941
+[an][ces] -> [ances] 942
+[ur][al] -> [ural] 943
+[ stat][istical] -> [ statistical] 944
+[ ter][m] -> [ term] 945
+[c][om] -> [com] 946
+[ int][ro] -> [ intro] 947
+[ intro][duc] -> [ introduc] 948
+[it][ive] -> [itive] 949
+[ha][vi] -> [havi] 950
+[ neur][ons] -> [ neurons] 951
+[ resear][c] -> [ researc] 952
+[her][s] -> [hers] 953
+[b][er] -> [ber] 954
+[t][o] -> [to] 955
+[u][se] -> [use] 956
+[ach][ines] -> [achines] 957
+[ation][al] -> [ational] 958
+[ the][n] -> [ then] 959
+[i][sed] -> [ised] 960
+[so][f] -> [sof] 961
+[ed][ical] -> [edical] 962
+[ inc][re] -> [ incre] 963
+[ represent][ation] -> [ representation] 964
+[ with][in] -> [ within] 965
+[duc][t] -> [duct] 966
+[ programm][ing] -> [ programming] 967
+[l][ing] -> [ling] 968
+[ s][ol] -> [ sol] 969
+[ s][h] -> [ sh] 970
+[et][ic] -> [etic] 971
+[ d][ist] -> [ dist] 972
+[s][or] -> [sor] 973
+[ f][ind] -> [ find] 974
+[ v][ect] -> [ vect] 975
+[re][e] -> [ree] 976
+[ with][out] -> [ without] 977
+[-][m] -> [-m] 978
+[ po][in] -> [ poin] 979
+[ poin][ts] -> [ points] 980
+[ eff][ici] -> [ effici] 981
+[ u][p] -> [ up] 982
+[ ][K] -> [ K] 983
+[ n][um] -> [ num] 984
+[i][red] -> [ired] 985
+[ang][u] -> [angu] 986
+[ t][w] -> [ tw] 987
+[ as][s] -> [ ass] 988
+[ know][n] -> [ known] 989
+[le][ction] -> [lection] 990
+[and][om] -> [andom] 991
+[ ab][out] -> [ about] 992
+[ist][s] -> [ists] 993
+[ n][o] -> [ no] 994
+[o][b] -> [ob] 995
+[ an][y] -> [ any] 996
+[es][s] -> [ess] 997
+[on][ent] -> [onent] 998
+[ res][ult] -> [ result] 999
+[<|endoftext|>] 1000
+[<|fim_prefix|>] 1001
+[<|fim_middle|>] 1002
+[<|fim_suffix|>] 1003
+[<|endofprompt|>] 1004
