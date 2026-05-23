@@ -1,8 +1,8 @@
 import pytest
-import tiktoken
+#import tiktoken
 import os
 
-from minbpe import BasicTokenizer, RegexTokenizer, GPT4Tokenizer
+from bpe_tokenizer.tokenizer import Tokenizer
 
 # -----------------------------------------------------------------------------
 # common test data
@@ -12,15 +12,15 @@ test_strings = [
     "", # empty string
     "?", # single character
     "hello world!!!? (안녕하세요!) lol123 😉", # fun small string
-    "FILE:taylorswift.txt", # FILE: is handled as a special string in unpack()
+    "FILE:wikipedia_page.txt", # FILE: is handled as a special string in unpack()
 ]
 def unpack(text):
     # we do this because `pytest -v .` prints the arguments to console, and we don't
     # want to print the entire contents of the file, it creates a mess. So here we go.
     if text.startswith("FILE:"):
         dirname = os.path.dirname(os.path.abspath(__file__))
-        taylorswift_file = os.path.join(dirname, text[5:])
-        contents = open(taylorswift_file, "r", encoding="utf-8").read()
+        file_path = os.path.join(dirname, text[5:])
+        contents = open(file_path, "r", encoding="utf-8").read()
         return contents
     else:
         return text
@@ -49,36 +49,36 @@ The ancestors of llamas are thought to have originated from the Great Plains of 
 # tests
 
 # test encode/decode identity for a few different strings
-@pytest.mark.parametrize("tokenizer_factory", [BasicTokenizer, RegexTokenizer, GPT4Tokenizer])
+#@pytest.mark.parametrize("tokenizer_factory", [Tokenizer])
 @pytest.mark.parametrize("text", test_strings)
-def test_encode_decode_identity(tokenizer_factory, text):
+def test_encode_decode_identity(text):
     text = unpack(text)
-    tokenizer = tokenizer_factory()
+    tokenizer = Tokenizer()
     ids = tokenizer.encode(text)
     decoded = tokenizer.decode(ids)
     assert text == decoded
 
 # test that our tokenizer matches the official GPT-4 tokenizer
-@pytest.mark.parametrize("text", test_strings)
-def test_gpt4_tiktoken_equality(text):
-    text = unpack(text)
-    tokenizer = GPT4Tokenizer()
-    enc = tiktoken.get_encoding("cl100k_base")
-    tiktoken_ids = enc.encode(text)
-    gpt4_tokenizer_ids = tokenizer.encode(text)
-    assert gpt4_tokenizer_ids == tiktoken_ids
+# @pytest.mark.parametrize("text", test_strings)
+# def test_gpt4_tiktoken_equality(text):
+#     text = unpack(text)
+#     tokenizer = GPT4Tokenizer()
+#     #enc = tiktoken.get_encoding("cl100k_base")
+#     tiktoken_ids = enc.encode(text)
+#     gpt4_tokenizer_ids = tokenizer.encode(text)
+#     assert gpt4_tokenizer_ids == tiktoken_ids
 
 # test the handling of special tokens
-def test_gpt4_tiktoken_equality_special_tokens():
-    tokenizer = GPT4Tokenizer()
-    enc = tiktoken.get_encoding("cl100k_base")
-    tiktoken_ids = enc.encode(specials_string, allowed_special="all")
-    gpt4_tokenizer_ids = tokenizer.encode(specials_string, allowed_special="all")
-    assert gpt4_tokenizer_ids == tiktoken_ids
+# def test_gpt4_tiktoken_equality_special_tokens():
+#     tokenizer = GPT4Tokenizer()
+#     enc = tiktoken.get_encoding("cl100k_base")
+#     tiktoken_ids = enc.encode(specials_string, allowed_special="all")
+#     gpt4_tokenizer_ids = tokenizer.encode(specials_string, allowed_special="all")
+#     assert gpt4_tokenizer_ids == tiktoken_ids
 
 # reference test to add more tests in the future
-@pytest.mark.parametrize("tokenizer_factory", [BasicTokenizer, RegexTokenizer])
-def test_wikipedia_example(tokenizer_factory):
+#@pytest.mark.parametrize("tokenizer_factory", [BasicTokenizer, RegexTokenizer])
+def test_wikipedia_example():
     """
     Quick unit test, following along the Wikipedia example:
     https://en.wikipedia.org/wiki/Byte_pair_encoding
@@ -99,7 +99,7 @@ def test_wikipedia_example(tokenizer_factory):
 
     So we expect the output list of ids to be [258, 100, 258, 97, 99]
     """
-    tokenizer = tokenizer_factory()
+    tokenizer = Tokenizer()
     text = "aaabdaaabac"
     tokenizer.train(text, 256 + 3)
     ids = tokenizer.encode(text)
@@ -111,7 +111,7 @@ def test_save_load(special_tokens):
     # take a bit more complex piece of text and train the tokenizer, chosen at random
     text = llama_text
     # create a Tokenizer and do 64 merges
-    tokenizer = RegexTokenizer()
+    tokenizer = Tokenizer()
     tokenizer.train(text, 256 + 64)
     tokenizer.register_special_tokens(special_tokens)
     # verify that decode(encode(x)) == x
@@ -121,7 +121,7 @@ def test_save_load(special_tokens):
     # save the tokenizer (TODO use a proper temporary directory)
     tokenizer.save("test_tokenizer_tmp")
     # re-load the tokenizer
-    tokenizer = RegexTokenizer()
+    tokenizer = Tokenizer()
     tokenizer.load("test_tokenizer_tmp.model")
     # verify that decode(encode(x)) == x
     assert tokenizer.decode(ids) == text

@@ -1,5 +1,7 @@
 import os
 from bpe_tokenizer.tokenizer import Tokenizer
+import time
+start = time.perf_counter()
 
 tokenizer = Tokenizer(verbose=False)
 
@@ -34,11 +36,11 @@ with open(filepath, 'r', encoding="utf-8") as f:
 # """.strip()
 #text = "a"
 #print(f"Original text: {text}")
-import time
-start = time.perf_counter()
+
 text_test = "Machine learning is a beautiful science! <|endoftext|>"
 
-tokenizer.train(text, vocab_size=1000)
+tokenizer.train(text, vocab_size=2000)
+tokenizer.save("tokenizer", save_path=".")
 tokens = tokenizer.encode(text_test, allowed_special="all")
 print(f"Tokens: {tokens}")
 elapsed = time.perf_counter() - start
