@@ -1,9 +1,12 @@
 [project]
 name = "bpe-tokenizer"
 version = "0.1.0"
-description = "Add your description here"
+description = "BPE tokenizer implementation"
+authors = [
+    {"name"="Francesco Arnò", "email"= ""}
+]
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.10"
 dependencies = [
     "regex>=2026.5.9",
 ]
@@ -22,9 +25,13 @@ lint = [
     "ruff>=0.15.13",
 ]
 
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+#[build-system]
+#requires = ["hatchling"]
+#build-backend = "hatchling.build"
 
-[tool.hatch.build.targets.wheel]
-packages = ["src/bpe_tokenizer"]
+#[tool.hatch.build.targets.wheel]
+#packages = ["src/bpe_tokenizer"]
+
+[build-system]
+requires = ["uv_build >= 0.11.7, <0.12.0"]
+build-backend = "uv_build"

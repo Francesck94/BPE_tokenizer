@@ -86,6 +86,7 @@ class Tokenizer():
         merges_to_do = vocab_size - 256
         for i in range(0, merges_to_do):
             # get the stats for each chunk
+            #
             #stats_for_chunk = [get_stats(ids) for ids in ids_chunks]
 
             stats = {}
