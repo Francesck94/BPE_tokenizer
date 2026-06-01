@@ -35,6 +35,21 @@ def merge(ids, pair, idx):
             i += 1
     return newids
 
+def _merge_stats(stats_list):
+    """
+    Combine a list of dict with pair frequency in a single dict.
+    """
+    full_stats = {}
+    for s in stats_list:
+        for k,v in s.items():
+            if k not in full_stats.keys():
+                full_stats[k] = v
+            else:
+                current_value = full_stats.get(k)
+                full_stats[k] = current_value + v
+                del current_value
+    return full_stats
+
 #gpt4_merges = recover_merges(tiktoken.get_encoding("cl100k_base")._mergeable_ranks)
 ENDOFTEXT = "<|endoftext|>"
 FIM_PREFIX = "<|fim_prefix|>"
@@ -87,11 +102,13 @@ class Tokenizer():
         for i in range(0, merges_to_do):
             # get the stats for each chunk
             #
-            #stats_for_chunk = [get_stats(ids) for ids in ids_chunks]
+            stats_for_chunk = [get_stats(ids) for ids in ids_chunks]
 
-            stats = {}
-            for ids in ids_chunks:
-                stats = get_stats(ids, stats)
+            # #TODO: fix this part
+            # stats = {}
+            # for ids in ids_chunks:
+            #     stats = get_stats(ids, stats)
+            stats = _merge_stats(stats_for_chunk)
 
             top_pair = max(stats, key=stats.get)
 
