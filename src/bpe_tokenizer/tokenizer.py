@@ -110,11 +110,12 @@ class Tokenizer():
             #     stats = get_stats(ids, stats)
             stats = _merge_stats(stats_for_chunk)
 
-            top_pair = max(stats, key=stats.get)
-            if top_pair is None:
+            if len(stats) == 0:
                 print("No more pairs to merge, stopping early.")
                 break
-
+            
+            top_pair = max(stats, key=stats.get)
+            
             new_token = last_vocab + i
 
             ids_chunks = [merge(ids, top_pair, new_token) for ids in ids_chunks]
