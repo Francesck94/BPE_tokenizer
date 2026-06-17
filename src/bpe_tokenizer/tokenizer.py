@@ -175,6 +175,13 @@ class Tokenizer():
 
         return ids
     
+    def decode(self, ids):
+        # Tokenizer can decode a list of integers into a string
+
+        original_str = b"".join([self.vocab[idx] for idx in ids])
+        original_str = original_str.decode("utf-8", errors="replace")
+        return original_str
+    
     
     def _apply_merges_on_chunk(self, sorted_merges, tok_chunk):
         found_merge = True
@@ -190,12 +197,6 @@ class Tokenizer():
                     break # we have to break here because the merges have to be applied sequentially, and we can't apply multiple merges at the same time because they might interfere with each other. For example, if we have merges (a, b) -> x and (x, c) -> y, and our token chunk is [a, b, c], we have to first merge (a, b) to get [x, c], and then merge (x, c) to get [y]. If we tried to apply both merges at the same time, we would not know whether to merge (a, b) or (x, c) first.
         return tok_chunk
 
-    def decode(self, ids):
-        # Tokenizer can decode a list of integers into a string
-
-        original_str = b"".join([self.vocab[idx] for idx in ids])
-        original_str = original_str.decode("utf-8", errors="replace")
-        return original_str
     
     def register_special_tokens(self, special_tokens, verbose=False):
         self.special_tokens = special_tokens
