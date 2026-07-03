@@ -182,6 +182,11 @@ class Tokenizer():
         original_str = original_str.decode("utf-8", errors="replace")
         return original_str
     
+    def tokenize(self, text, allowed_special=None):
+        # Tokenizer can tokenize a string into a list of strings (tokens)
+        ids = self.encode(text, allowed_special)
+        text_chunks = [self.vocab[idx].decode("utf-8", errors="replace") for idx in ids]
+        return text_chunks
     
     def _apply_merges_on_chunk(self, sorted_merges, tok_chunk):
         found_merge = True

@@ -62,8 +62,25 @@ tokenizer.load("my_tokenizer.model")
 
 ## Installation
 
+Requires Python >= 3.10.
+
+Clone the repository and install it in editable mode:
+
 ```bash
+git clone https://github.com/Francesck94/BPE_tokenizer.git
+cd BPE_tokenizer
+
+# Using uv (recommended)
+uv sync
+
+# Or using pip
 pip install -e .
 ```
 
-Requires Python >= 3.13 and the `regex` package.
+To also install the dependencies needed for the data-download notebook (`jupyter`, `requests`), add the `download-data` extra:
+
+```bash
+uv sync --extra download-data
+# or
+pip install -e ".[download-data]"
+```
