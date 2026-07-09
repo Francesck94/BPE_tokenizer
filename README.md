@@ -64,7 +64,21 @@ tokenizer.load("my_tokenizer.model")
 
 Requires Python >= 3.10.
 
-Clone the repository and install it in editable mode:
+### Install from GitHub
+
+```bash
+pip install git+https://github.com/Francesck94/BPE_tokenizer.git
+```
+
+To install a specific version:
+
+```bash
+pip install git+https://github.com/Francesck94/BPE_tokenizer.git@v0.1.4
+```
+
+### Install for development
+
+Clone the repository and install in editable mode:
 
 ```bash
 git clone https://github.com/Francesck94/BPE_tokenizer.git

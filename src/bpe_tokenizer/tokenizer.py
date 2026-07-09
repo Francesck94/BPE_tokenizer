@@ -82,6 +82,10 @@ class Tokenizer:
         self.verbose = verbose
         # self.merges = self._shuffle_merges()
         self.vocab = self._build_vocab()  # int -> bytes
+    
+    def __repr__(self):
+        class_name = type(self).__name__
+        return f"{class_name}(vocab_size={len(self.vocab)}, merges={len(self.merges)}, special_tokens={len(self.special_tokens)})"
 
     def _build_vocab(self):
         # vocab is simply and deterministically derived from merges
