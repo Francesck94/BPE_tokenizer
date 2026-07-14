@@ -1,5 +1,6 @@
 import pytest
-#import tiktoken
+
+# import tiktoken
 import os
 
 from bpe_tokenizer.tokenizer import Tokenizer
@@ -9,11 +10,13 @@ from bpe_tokenizer.tokenizer import Tokenizer
 
 # a few strings to test the tokenizers on
 test_strings = [
-    "", # empty string
-    "?", # single character
-    "hello world!!!? (안녕하세요!) lol123 😉", # fun small string
-    "FILE:wikipedia_page.txt", # FILE: is handled as a special string in unpack()
+    "",  # empty string
+    "?",  # single character
+    "hello world!!!? (안녕하세요!) lol123 😉",  # fun small string
+    "FILE:wikipedia_page.txt",  # FILE: is handled as a special string in unpack()
 ]
+
+
 def unpack(text):
     # we do this because `pytest -v .` prints the arguments to console, and we don't
     # want to print the entire contents of the file, it creates a mess. So here we go.
@@ -25,6 +28,7 @@ def unpack(text):
     else:
         return text
 
+
 specials_string = """
 <|endoftext|>Hello world this is one document
 <|endoftext|>And this is another document
@@ -32,11 +36,11 @@ specials_string = """
 <|endoftext|>Last document!!! 👋<|endofprompt|>
 """.strip()
 special_tokens = {
-    '<|endoftext|>': 100257,
-    '<|fim_prefix|>': 100258,
-    '<|fim_middle|>': 100259,
-    '<|fim_suffix|>': 100260,
-    '<|endofprompt|>': 100276
+    "<|endoftext|>": 100257,
+    "<|fim_prefix|>": 100258,
+    "<|fim_middle|>": 100259,
+    "<|fim_suffix|>": 100260,
+    "<|endofprompt|>": 100276,
 }
 llama_text = """
 <|endoftext|>The llama (/ˈlɑːmə/; Spanish pronunciation: [ˈʎama] or [ˈʝama]) (Lama glama) is a domesticated South American camelid, widely used as a meat and pack animal by Andean cultures since the pre-Columbian era.
@@ -48,8 +52,9 @@ The ancestors of llamas are thought to have originated from the Great Plains of 
 # -----------------------------------------------------------------------------
 # tests
 
+
 # test encode/decode identity for a few different strings
-#@pytest.mark.parametrize("tokenizer_factory", [Tokenizer])
+# @pytest.mark.parametrize("tokenizer_factory", [Tokenizer])
 @pytest.mark.parametrize("text", test_strings)
 def test_encode_decode_identity(text):
     text = unpack(text)
@@ -88,6 +93,7 @@ def test_wikipedia_example():
     assert ids == [258, 100, 258, 97, 99]
     assert tokenizer.decode(tokenizer.encode(text)) == text
 
+
 @pytest.mark.parametrize("special_tokens", [{}, special_tokens])
 def test_save_load(special_tokens):
     # take a bit more complex piece of text and train the tokenizer, chosen at random
@@ -112,6 +118,7 @@ def test_save_load(special_tokens):
     # delete the temporary files
     for file in ["test_tokenizer_tmp.model", "test_tokenizer_tmp.vocab"]:
         os.remove(file)
+
 
 if __name__ == "__main__":
     pytest.main()

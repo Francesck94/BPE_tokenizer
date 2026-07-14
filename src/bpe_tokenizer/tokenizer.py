@@ -82,7 +82,7 @@ class Tokenizer:
         self.verbose = verbose
         # self.merges = self._shuffle_merges()
         self.vocab = self._build_vocab()  # int -> bytes
-    
+
     def __repr__(self):
         class_name = type(self).__name__
         return f"{class_name}(vocab_size={len(self.vocab)}, merges={len(self.merges)}, special_tokens={len(self.special_tokens)})"
@@ -239,7 +239,6 @@ class Tokenizer:
         if verbose:
             print(f"New pattern: {self.pattern}")
         self.regex_pattern = re.compile(self.pattern)
-
 
     def _create_special_pattern(self, special_tokens):
         # create a regex pattern that matches any of the special tokens, sorted by length
